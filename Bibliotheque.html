@@ -7,27 +7,40 @@
     <title>Bibliotheque</title>
 </head>
 <body> 
+    <!--balise indiquant un titre niveau 1-->
     <h1>JASIM BIBLIOTHEQUE</h1>
+    <!--balise permetant d'afficher une image-->
 <img src="image bibliotheque/photo bibliotheque.jpg" alt="photo bibliotheque">
+<!--balise qui permet de structurer element non ordonnés-->
     <ul>
+     <!--baise <li> et<a avec l'atribut href> permet de créer des liens, bloc des liens se trouve dans la meme page-->
    <li><a href="#accueil">Accueil</a></li><br>
    <li><a href="#catalogue">Catalogue</a></li><br>
    <li><a href="#A propos">A propos</a></li><br>
    <li><a href="#contact">Contact</a></li>
 
     </ul>
+    <!--balise qui indique un titre niveau 2-->
     <h2 id="accueil">Accueil</h2>
+    <!--balise qui indique un paragraphe-->
     <p>Jasim Bibliothèque offre un environnement accueillant et stimulant pour tous les amateurs de lecture.
     </p>
+<!--balise permetant de creer un lien-->
 <a href="en savoir plus">en savoir plus</a>
-<h2 id="catologue">Catologue</h2>   
-<li>Titre du livre-Auteur(s)-année de publication</li>
+<h2 id="catalogue">Catalogue</h2>   
+<ul>
+ <li>Titre du livre-Auteur(s)-année de publication</li>
+</ul>
+<!--balise <h> avec l'atribut (id) affiche le contenu du lien-->
 <h2 id="A propos">A propos</h2>
+<!--indique un paragraphe-->
 <p>information sur la bibliotheque</p>
 <h2 id="contact">Contact</h2>
+<!--creation de formulaire-->
 <form method="">
-
+   <!--balise permettant d'afficher un element dans un ecran-->
     <label for="name du bibliothecaire">Nom du bibliothecaire </label>
+    <!--permet d'inserer un champ de saisi (nom,prenom,email,mot de passe et sex)-->
     <input type="text" name="nom du didliothecaire" required><br>
     <label for="prenom">Prenom</label>
     <input type="text" name="prenom"><br>
@@ -45,22 +58,24 @@
     <label for="adresse E-mail">Adresse E-mail</label>
     <input type="email" name="adresse E-mail" placeholder="exemple@gmail.com"><br>
     <label for="mot de passe">Mot de passe</label>
-    <input type="text" name="Mot de passe"><br>
+     <input type="password" name="mot de passe"><br>
     <label for="confirmer le mot de passe">Confirmer le mot de passe</label>
     <input type="text" name="confirmer le mot de passe"><br>
     <label for="livres disponibles">Livres disponibles</label>
+    <!--s'il s'agit de faire une selection-->
     <select name="livres">
+        <!--balise qui permet de creer une liste deroulant permetant de choisir une option-->
         <option value="solution"selected>Solution</option>
         <OPtion value="secret">Secret</OPtion>
         <option value="la sagesse">La sagesse</option>
         <option value="la reussite">La reussite</option>
     </select>
     <br>
+    <!--par contre ici on crée le bouton radion avant d'afficher un element à l'ecran-->
    <input type="radio" name="radio" value="J'accepte les termes d'utilisation du contrat">
     <label for="j'accepte les termes d'utilisation du contrat">J'accepte les termes d'utilisation du contrat</label><br>
         <input type="radio" name="radio" value="je refuse les termes d'utilisation du contrat">
     <label for="j'accepte les termes d'utilisation du contrat">J'accepte les termes d'utilisation du contrat</label>
-
 
 </form>
 </body>
