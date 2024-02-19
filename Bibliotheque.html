@@ -10,7 +10,7 @@
     <!--balise indiquant un titre niveau 1-->
     <h1>JASIM BIBLIOTHEQUE</h1>
     <!--balise permetant d'afficher une image-->
-<img src="image bibliotheque/photo bibliotheque.jpg" alt="photo bibliotheque">
+<img src="image_bibliotheque/photo_bibliotheque.jpg" alt="photo bibliotheque">
 <!--balise qui permet de structurer element non ordonnés-->
     <ul>
      <!--baise <li> et<a avec l'atribut href> permet de créer des liens, bloc des liens se trouve dans la meme page-->
@@ -41,26 +41,26 @@
    <!--balise permettant d'afficher un element dans un ecran-->
     <label for="name du bibliothecaire">Nom du bibliothecaire </label>
     <!--permet d'inserer un champ de saisi (nom,prenom,email,mot de passe et sex)-->
-    <input type="text" name="nom du didliothecaire" required><br>
+    <input type="text" name="nom du bibliothecaire" required placeholder="entrez votre nom"><br><br>
     <label for="prenom">Prenom</label>
-    <input type="text" name="prenom"><br>
+    <input type="text" name="prenom" placeholder="entrez votre prenom"><br><br>
     <label for="date de naissance">Date de naissance</label>
-    <input type="date" name="date de naissance"><br>
+    <input type="date" name="date de naissance"><br><br>
     <label for="sexe">Sexe</label>
     <input type="radio" name="radio" value="Mâle">
     <label for="mâle">Mâle</label>
     <input type="radio" name="radio" value="femelle">
-    <label for="femelle">Femelle</label><br>
+    <label for="femelle">Femelle</label><br><br>
     <label for="adresse postale">Adresse Postale</label>
-    <input type="text" name="adresse postale" placeholder="84 avenue de paris versaille 78000"><br>
+    <input type="text" name="adresse postale" placeholder="84 avenue de paris versaille 78000"><br><br>
     <label for="numero de téléphone">Numero de téléphone</label>
-    <input type="tel" name="numero de téléphone" placeholder="003366666666"><br>
+    <input type="tel" name="numero de téléphone" placeholder="003366666666"><br><br>
     <label for="adresse E-mail">Adresse E-mail</label>
-    <input type="email" name="adresse E-mail" placeholder="exemple@gmail.com"><br>
+    <input type="email" name="adresse E-mail" placeholder="exemple@gmail.com"><br><br>
     <label for="mot de passe">Mot de passe</label>
-     <input type="password" name="mot de passe"><br>
+     <input type="password" name="mot de passe"><br><br>
     <label for="confirmer le mot de passe">Confirmer le mot de passe</label>
-    <input type="text" name="confirmer le mot de passe"><br>
+    <input type="password" name="confirmer le mot de passe"><br><br>
     <label for="livres disponibles">Livres disponibles</label>
     <!--s'il s'agit de faire une selection-->
     <select name="livres">
@@ -75,8 +75,11 @@
    <input type="radio" name="radio" value="J'accepte les termes d'utilisation du contrat">
     <label for="j'accepte les termes d'utilisation du contrat">J'accepte les termes d'utilisation du contrat</label><br>
         <input type="radio" name="radio" value="je refuse les termes d'utilisation du contrat">
-    <label for="j'accepte les termes d'utilisation du contrat">J'accepte les termes d'utilisation du contrat</label>
-
+    <label for="j'accepte les termes d'utilisation du contrat">J'accepte les termes d'utilisation du contrat</label><br><br>
+    <!--boutton pour envoyer-->
+<input type="submit" value="Envoyer">
+<!--bouton pour annuler-->
+<input type="reset" value="Annuler">
 </form>
 </body>
 </html>
