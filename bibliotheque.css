@@ -1,0 +1,59 @@
+body{
+background-color: azure;
+}
+#catalogue{
+font-family: Arial, Helvetica, sans-serif;
+color: blue;
+
+}
+#accueil{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+#A_propos/*selecteur*/{
+    /*propreté*/font-family: Arial, Helvetica, sans-serif;
+    color: blue;/*valeur*/
+}
+#contact{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+.button{
+    background-color: aqua;
+    padding: 10px 20px;
+    border-radius: 5px ;
+}
+.theque{
+    border: 1px solid blue; 
+   /*marge interne*/ padding: 5px; 
+   /*angle de bordure*/ border-radius: 5px;
+   /*couleur de fond*/ background-color: greenyellow;
+   /*marge à droite*/ margin-right: 340px;
+}
+
+form label{
+    color: navy;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: inherit;
+    font-size: 20px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="password"],
+form select{
+width: 30%;
+padding: 5px;
+border: 1px solid #ccc ;
+border-radius: 5px;
+box-sizing: border-box;
+
+}
+form label[for="etoile"]{
+    color: red;
+    
+}
+
+
