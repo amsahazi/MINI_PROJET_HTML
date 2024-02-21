@@ -1,0 +1,60 @@
+body{
+background-color: azure;
+}
+#catalogue{
+font-family: Arial, Helvetica, sans-serif;
+color: blue;
+
+}
+#accueil{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+#A_propos/*selecteur*/{
+    /*propreté*/font-family: Arial, Helvetica, sans-serif;
+    color: blue;/*valeur*/
+}
+#contact{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+.button{
+    background-color: aqua;
+    padding: 10px 20px;
+    border-radius: 5px ;
+}
+.theque{
+    border: 1px solid blue; 
+   /*marge interne*/ padding: 5px; 
+   /*angle de bordure*/ border-radius: 5px;
+   /*couleur de fond*/ background-color: greenyellow;
+   /*marge à droite*/ margin-right: 340px;
+}
+
+form label{
+    color: navy;/*couleur de text*/
+    font-family: Georgia, 'Times New Roman', Times, serif;/*la police du text*/
+    font-style: inherit;/*style du text*/
+    font-size: 20px;/*taille du police*/
+}
+/*c'est pour utiliser le selecteur d'attribut(on commence par form pour les formulaire)*/
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="password"],
+form select{
+width: 30%;/*largeur*/
+padding: 5px;
+border: 1px solid #ccc ;
+border-radius: 5px;
+box-sizing: border-box;/*permet de regler la longueur et la largeur total du champ*/
+
+}
+form label[for="etoile"]{
+    color: red;
+    
+}
+
+

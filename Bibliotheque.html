@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--titre de la page-->
+   <!--liaison entre le fichier css et html-->
+    <link rel="stylesheet" href="bibliotheque.css">
+
+     <!--titre de la page-->
     <title>Bibliotheque</title>
 </head>
 <body> 
@@ -16,17 +19,18 @@
      <!--baise <li> et<a avec l'atribut href> permet de créer des liens, bloc des liens se trouve dans la meme page-->
    <li><a href="#accueil">Accueil</a></li><br>
    <li><a href="#catalogue">Catalogue</a></li><br>
-   <li><a href="#A propos">A propos</a></li><br>
+   <li><a href="#A_propos">A propos</a></li><br>
    <li><a href="#contact">Contact</a></li>
 
     </ul>
     <!--balise qui indique un titre niveau 2-->
     <h2 id="accueil">Accueil</h2>
     <!--balise qui indique un paragraphe-->
-    <p>Jasim Bibliothèque offre un environnement accueillant et stimulant pour tous les amateurs de lecture.
+    <p class="theque">Jasim Bibliothèque offre un environnement accueillant et stimulant pour tous les amateurs de lecture.
     </p>
 <!--balise permetant de creer un lien-->
 <a href="en savoir plus">en savoir plus</a>
+
 <h2 id="catalogue">Catalogue</h2>   
 
 <h3><u>Titre du livre-Auteur-année de publication</u></h3>
@@ -34,7 +38,7 @@
  <li>solution-jasim-2023</li>
 </ul>
 <!--balise <h> avec l'atribut (id) affiche le contenu du lien-->
-<h2 id="A propos">A propos</h2>
+<h2 id="A_propos">A propos</h2>
 <!--indique un paragraphe-->
 <p>information sur la bibliotheque</p>
 <h2 id="contact">Contact</h2>
@@ -43,9 +47,10 @@
    <!--balise permettant d'afficher un element dans un ecran-->
     <label for="name du bibliothecaire">Nom du bibliothecaire </label>
     <!--permet d'inserer un champ de saisi (nom,prenom,email,mot de passe et sex)-->
-    <input type="text" name="nom du bibliothecaire" required placeholder="entrez votre nom"><br><br>
+    <input type="text" name="nom du bibliothecaire" required placeholder="Entrez votre nom"><br><br>
+    <label for="etoile">*</label>
     <label for="prenom">Prenom</label>
-    <input type="text" name="prenom" placeholder="entrez votre prenom"><br><br>
+    <input type="text" name="prenom" placeholder="Entrez votre prenom"><br><br>
     <label for="date de naissance">Date de naissance</label>
     <input type="date" name="date de naissance"><br><br>
     <label for="sexe">Sexe</label>
@@ -79,9 +84,9 @@
         <input type="radio" name="radio" value="je refuse les termes d'utilisation du contrat">
     <label for="j'accepte les termes d'utilisation du contrat">J'accepte les termes d'utilisation du contrat</label><br><br>
     <!--boutton pour envoyer-->
-<input type="submit" value="Envoyer">
+<button class="button">Envoyer</button>
 <!--bouton pour annuler-->
-<input type="reset" value="Annuler">
+<button class="button">Annuler</button>
 </form>
 </body>
 </html>
