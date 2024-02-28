@@ -6,6 +6,8 @@
 //message = "Bonjour Rouchdi vous possedez :";
 //console.log (message, OrangeQuantity,"Orange et", MangoQuantity, "Mange")
 
+//const { functionsIn } = require("cypress/types/lodash");
+
 /*const num = 255;
 let txt ="255";
 let bin = true;
@@ -40,7 +42,7 @@ let trainerProfile = {
     availble:false
 };
 console.log(trainerProfile["name"])
-console.log(trainerProfile.age)*/
+console.log(trainerProfile.age)
 
 // exercice 2
 let coursAutomation = {
@@ -119,7 +121,73 @@ let coursAutomation = {
  
  console.log(coursAutomation.data[2].updated_at)// 1er methode pour afficher (updtae_at htmlcss)
 let htmlcss = coursAutomation.data[2];
-console.log(htmlcss.updated_at)// 2em methode 
+console.log(htmlcss.updated_at)// 2em methode
+
+// exercice 1 (if,else if et else) les conditions sur javascript
+let age = 17;
+if (age<18) {
+    console.log("vous êtes mineur")
+}
+else if (age>=18 && age<=65) {
+    console.log("vous êtes majeur")
+}
+else {
+    console.log("vous êtes senior")
+}
+//exercice 2 pour switch
+let jourNumber = 7;
+let jour;
+switch (jourNumber) {
+    case 1:
+        jour = "Lundi"
+        break;
+    case 2:
+        jour = "Mardi"
+        break;
+    case 3:
+        jour = "Mercredi"
+        break;
+    case 4:
+        jour = "Jeudi"
+        break;
+    case 5:
+        jour = "Vendredi"
+        break;
+    case 6:
+        jour = "Samedi"
+        break;
+    case 7:
+        jour = "Dimanche"
+        break;
+
+    default: 
+    console.log("Votre numero n'est pas valide")    
+}
+console.log("Le jour correspondant à ce numero est : "+jour)
+
+// exercice3 pour les fonction
+function square(num) {
+    return num * num
+}
+console.log(square(7))*/
+
+/*function Addition(a,b) {
+    return a+b 
+}
+    console.log(Addition(4,4))*/
+
+ /*function Soustraction(a,b) {
+    return a-b
+}
+console.log(Soustraction(7,9))*/
+
+function multiplication(a,b) {
+    return a*b
+}
+console.log(multiplication(7,9))
+
+
+
 
 
 
