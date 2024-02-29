@@ -124,7 +124,7 @@ let htmlcss = coursAutomation.data[2];
 console.log(htmlcss.updated_at)// 2em methode
 
 // exercice 1 (if,else if et else) les conditions sur javascript
-let age = 17;
+let age = 18;
 if (age<18) {
     console.log("vous êtes mineur")
 }
@@ -181,10 +181,75 @@ console.log(square(7))*/
 }
 console.log(Soustraction(7,9))*/
 
-function multiplication(a,b) {
+/*function multiplication(a,b) {
     return a*b
 }
-console.log(multiplication(7,9))
+console.log(multiplication(7,9))*/
+// exercice sans paramettre ni retour
+/*function bonjourRouchdi(){
+    console.log('bonjour Rouchdi comment tu vas?')
+}
+bonjourRouchdi();*/
+
+// exo sans paramettre avec retour
+/*function bonjourRouchdi(){
+    return "bonjour Rouchdi"
+}
+console.log(bonjourRouchdi())
+// exercice sur les boucles
+// boucles for pour parcourir de 3 à 20
+let J = 3;
+for (J = 3; J < 20; J++) {
+  console.log(J)  
+}
+// pour parcourir un tableau
+const fruits = ["Pomme","Banane","Orange","Fraise"];
+let i = 0
+for (i = 0; i< fruits.length; i++) {
+    console.log(fruits[i]);   
+}
+// parcourir intresequement les nombre paire
+let i = 0;
+for (i = 0; i<=10; i+=2){
+    console.log(i);
+}
+//la somme des nombres dans un tableau
+const nombres = [5, 10, 15, 20, 25];
+let somme = 0;
+let i = 0;
+for (i = 0; i < nombres.length; i++) {
+somme = somme + nombres[i] 
+}
+    console.log("la somme des nombres du tableau est :",somme)
+    // parcourir un objet
+    const person = {
+        name: "John",
+        age: 30,
+        city: "New York"
+      };
+      let key;
+      for (key in person) {
+        console.log(key + ": " + person[key]);
+      }
+      const car = {
+        brand: "Toyota",
+        model: "Camry",
+        year: 2020,
+        color: "blue"
+      };
+      let key;
+      for ( key in car) {
+        console.log(key + ": " + car[key]);
+      }
+      // boucle while
+      // exercice 1 parcourir en tableau
+      const fruits = ["Pomme","Banane","Orange","Fraise"];
+      let i=0
+      while (i<fruits.length) {
+        console.log(fruits[i])
+        i++
+      }*/
+      
 
 
 
