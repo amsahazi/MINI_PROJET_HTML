@@ -250,6 +250,7 @@ somme = somme + nombres[i]
         i++
       }*/
       
+      
 
 
 
