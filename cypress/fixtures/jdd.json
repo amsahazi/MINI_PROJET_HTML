@@ -1,0 +1,18 @@
+[
+{
+    "username":"known_user",
+    "password":"cypress-geek"
+},
+{
+    "username":"known_user",
+    "password":"cypress-gee"
+},
+{
+    "username":"known_use",
+    "password":"cypress-geek"
+},
+{
+    "username":"known_use",
+    "password":"cypress-gee"
+}
+]
