@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+<<<<<<< HEAD
 
   e2e: {
     requestTimeout: 2000,
@@ -12,6 +13,13 @@ module.exports = defineConfig({
     // Définit l'URL de base pour toutes les visites de site
 // Les chemins relatifs seront concaténés avec cette URL de base
    baseUrl: null,
+=======
+  e2e: {
+    // Définit l'URL de base pour toutes les visites de site
+// Les chemins relatifs seront concaténés avec cette URL de base
+    baseUrl: "https://practice.automationtesteracademy.com/",
+    projectId: c94720f4-f7d4-43e1-8e02-eb4bc7d698b4,
+>>>>>>> f0856e1fca544f3426bef4460a9806f6ce10c959
     // Active ou désactive la surveillance des changements de fichiers dans le dossier de test
 // Si activée (true), Cypress relancera automatiquement les tests en cas de modification
     watchForFileChanges: true,

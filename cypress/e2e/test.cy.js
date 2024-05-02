@@ -22,22 +22,29 @@
         cy.log("deuxieme scenario")
     })*/
     it("premier scenario de test", ()=>{
+<<<<<<< HEAD
     cy.intercept({
         url:"",
         method:""
     })
 
+=======
+>>>>>>> f0856e1fca544f3426bef4460a9806f6ce10c959
         cy.get("#username").type("known_user");
        cy.get("#password").type("cypress-geek");
         //cy.get(".checkbox-input").check().should("be.checked");
        cy.get(".login-button").click();
+<<<<<<< HEAD
        cy.get('[data-test="search-products"]').click();
        cy.get('[data-test="search-products"]').type("Robe");
        cy.get('[data-test="submit-search"]').click();
+=======
+>>>>>>> f0856e1fca544f3426bef4460a9806f6ce10c959
        //cy.get("[data-testid=user-title1]").should("be.visible").and("contains.text", known_user);
        // cy.contains("Se Connecter").click();
         //cy.get(".all-usernames").contains(known_user).should("be.visible");
         // Sélectionne un élément avec l'attribut 'data-test' ayant la valeur 'consulter-btn'
+<<<<<<< HEAD
      // cy.get('[data-test="consulter-btn"]')
       // et vérifie qu'il est visible à l'écran
       //.should('be.visible')
@@ -61,6 +68,31 @@
       })
     });
    /* after(()=>{
+=======
+      cy.get('[data-test="consulter-btn"]')
+      // et vérifie qu'il est visible à l'écran
+      .should('be.visible')
+      //puis sélectionne le troisième élément trouvé
+      .eq(2);
+      // Sélectionne tous les éléments avec la classe CSS "bottom-content"
+      cy.get('.bottom-content')
+      // Recherche les éléments descendants avec l'attribut data-test="price-product"
+      .find('[data-test="price-product"]')
+      // Vérifie que le texte de ces éléments inclut le symbole de livre sterling (£)
+      .should('include.text', '£')
+      // Ensuite, vérifie que les éléments sont visibles à l'écran
+      .and('be.visible');
+      // Sélectionne tous les éléments avec la classe CSS "bottom-content"
+      cy.get('.bottom-content')
+      // et trouve les éléments descendants avec l'attribut data-test="price-product"
+      .find('[data-test="price-product"]')
+      // Pour chaque élément trouvé, vérifie que son texte inclut le symbole de livre sterling (£)
+      .each((price)=>{
+      expect(price).include.text('£')
+      })
+    });
+    after(()=>{
+>>>>>>> f0856e1fca544f3426bef4460a9806f6ce10c959
        
         /*cy.get(".span-name")
         .contains("Consulter")
@@ -74,16 +106,27 @@
         //et qu'il est visible à l'écran
         .should("be.visible");
         cy.get('[data-test="logo-img"]').should('exist');
+<<<<<<< HEAD
         
 
     })*/
+=======
+        */
+
+    })
+>>>>>>> f0856e1fca544f3426bef4460a9806f6ce10c959
 
 
 /*
     it.skip("deuxieme scenario", ()=>{
         cy.log("ceci est le deuxieme scenario")
+<<<<<<< HEAD
     })
 });
+=======
+    })*/
+});/*
+>>>>>>> f0856e1fca544f3426bef4460a9806f6ce10c959
 describe("deuxieme suite de test", ()=>{
     it("deuxieme scenario de test", ()=>{
         cy.visit("Bibliotheque.html")
